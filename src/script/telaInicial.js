@@ -5,7 +5,7 @@ export function pegarDados() {
   localizacaoDigitada.addEventListener("click", () => {
     const informacao = campoLocalizacao.value;
     if (informacao.trim() !== "") {
-      window.location.href = `src/pages/paginaPrincipal.html?data=${informacao}`;
+      window.location.href = `./paginaPrincipal.html?data=${informacao}`;
     } else {
       alert("Digite Algo");
     }
