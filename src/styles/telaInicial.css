@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+
+body {
+  background-image: url("../imagens/globo1.jpg");
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1024px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 1750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1024px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 1024px;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+/* Parte dois */
+
+.container {
+  position: relative;
+}
+
+.input-with-button {
+  width: 600px;
+  position: relative;
+}
+
+.input-with-button input[type="text"] {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #358afa, #013152);
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+.input-with-button ::placeholder {
+  color: white;
+}
+.input-with-button button {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 150px;
+  height: 100%;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #012e63;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
