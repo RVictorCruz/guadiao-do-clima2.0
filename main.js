@@ -3,4 +3,3 @@ import { pegarDados } from "./src/script/telaInicial";
 
 pegarDados();
 //run();
-alert("Luis é javeiro!!");
