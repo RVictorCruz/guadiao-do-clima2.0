@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guardião do Clima</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script type="module" src="./src/script/paginaPrincipal.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Informação Recebida</h1>
+    <div>
+      <p id="dadosRecebidos"></p>
+    </div>
+    <div id="clima-info">
+      <!-- Os dados da API serão inseridos aqui -->
+    </div>
+    <!-- Seu conteúdo HTML aqui -->
+    <canvas id="meuGrafico" width="400" height="40"></canvas>
+
+    <!-- Maps -->
+    <div id="style-selector-control" class="map-control">
+      <select id="style-selector" class="selector-control">
+        <option value="default">Default</option>
+        <option value="silver">Silver</option>
+        <option value="night">Night mode</option>
+        <option value="retro" selected="selected">Retro</option>
+        <option value="hiding">Hide features</option>
+      </select>
+    </div>
+    <div id="map"></div>
+    <!-- Fim Maps -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
 </html>
